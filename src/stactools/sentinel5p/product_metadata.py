@@ -673,6 +673,8 @@ class ProductMetadata:
                     int(self._root['METADATA/ALGORITHM_SETTINGS'].getncattr(
                         "Number_of_scaled_FOV"))
                 }
+            else:
+                raise RuntimeError(f"Unknown product type: {self.file_path}")
         else:
             start_datetime = _get_start_datetime_from_json(
                 self.file_path, self._root)
@@ -1120,5 +1122,7 @@ class ProductMetadata:
                     int(self._root['METADATA']['ALGORITHM_SETTINGS']
                         ['Number_of_scaled_FOV'])
                 }
+            else:
+                raise RuntimeError(f"Unknown product type: {self.file_path}")
 
         return {k: v for k, v in result.items() if v is not None}
