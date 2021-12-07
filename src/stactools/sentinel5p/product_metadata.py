@@ -62,6 +62,7 @@ class ProductMetadata:
                       for coord in longitude_ccd[::-1]] +
                      [[longitude_ccd[0], coord]
                       for coord in latitude_ccd[::-1]]))
+            footprint_polygon = footprint_polygon.simplify(0)
         else:
             if self.file_path.endswith(".nc"):
                 footprint_text = self._root[
