@@ -1,7 +1,6 @@
 import logging
 
 import pystac
-from pystac.extensions.eo import EOExtension
 from pystac.extensions.sat import SatExtension
 
 from .constants import (SENTINEL_CONSTELLATION, SENTINEL_LICENSE,
@@ -42,7 +41,7 @@ def create_item(file_path: str) -> pystac.Item:
     fill_sat_properties(sat, file_path)
 
     # eo
-    EOExtension.ext(item, add_if_missing=True)
+    # EOExtension.ext(item, add_if_missing=True)
 
     # s5p product properties
     item.properties.update({**product_metadata.metadata_dict})
