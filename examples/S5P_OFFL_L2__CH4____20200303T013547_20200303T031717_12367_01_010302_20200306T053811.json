@@ -1373,42 +1373,13 @@
     }
   ],
   "assets": {
-    "S5P_OFFL_L2__CH4____20200303T013547_20200303T031717_12367_01_010302_20200306T053811": {
+    "Methane": {
       "href": "/opt/stactools-sentinel5p/tests/data-files/S5P_OFFL_L2__CH4____20200303T013547_20200303T031717_12367_01_010302_20200306T053811.nc",
       "type": "application/x-netcdf",
       "description": "TROPOMI/S5P Methane 1-Orbit L2 Swath 7x7km",
-      "eo:bands": [
-        {
-          "name": "Band 6",
-          "spectrometer": "NIR",
-          "performance range": "710-775",
-          "spectral range": "725-786",
-          "spectral resoluton": "0.34-0.35",
-          "slit width": 280,
-          "spectral dispersion": 0.126,
-          "spectral magnification": 0.263
-        },
-        {
-          "name": "Band 7",
-          "spectrometer": "SWIR",
-          "performance range": "2305-2385",
-          "spectral range": "2300-2343",
-          "spectral resoluton": 0.227,
-          "slit width": 308,
-          "spectral dispersion": 0.094,
-          "spectral magnification": 0.025
-        },
-        {
-          "name": "Band 8",
-          "spectrometer": "SWIR",
-          "performance range": "2305-2385",
-          "spectral range": "2343-2389",
-          "spectral resoluton": 0.225,
-          "slit width": 308,
-          "spectral dispersion": 0.094,
-          "spectral magnification": 0.021
-        }
-      ],
+      "file:checksum": "845e0b705a09521f49dd4a8788dba97f",
+      "file:size": 235266,
+      "file:local_path": "S5P_OFFL_L2__CH4____20200303T013547_20200303T031717_12367_01_010302_20200306T053811",
       "roles": [
         "data",
         "metadata"
@@ -1422,7 +1393,6 @@
     86.633255
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json"
   ]
 }

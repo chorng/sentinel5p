@@ -1365,32 +1365,13 @@
     }
   ],
   "assets": {
-    "S5P_OFFL_L2__CO_____20200303T013547_20200303T031717_12367_01_010302_20200306T032410": {
+    "CO Column": {
       "href": "/opt/stactools-sentinel5p/tests/data-files/S5P_OFFL_L2__CO_____20200303T013547_20200303T031717_12367_01_010302_20200306T032410.nc",
       "type": "application/x-netcdf",
       "description": "TROPOMI/S5P CO Column 1-Orbit L2 Swath 7x7km",
-      "eo:bands": [
-        {
-          "name": "Band 7",
-          "spectrometer": "SWIR",
-          "performance range": "2305-2385",
-          "spectral range": "2300-2343",
-          "spectral resoluton": 0.227,
-          "slit width": 308,
-          "spectral dispersion": 0.094,
-          "spectral magnification": 0.025
-        },
-        {
-          "name": "Band 8",
-          "spectrometer": "SWIR",
-          "performance range": "2305-2385",
-          "spectral range": "2343-2389",
-          "spectral resoluton": 0.225,
-          "slit width": 308,
-          "spectral dispersion": 0.094,
-          "spectral magnification": 0.021
-        }
-      ],
+      "file:checksum": "684b3a0a76934f16712e7898211d8b79",
+      "file:size": 202055,
+      "file:local_path": "S5P_OFFL_L2__CO_____20200303T013547_20200303T031717_12367_01_010302_20200306T032410",
       "roles": [
         "data",
         "metadata"
@@ -1404,7 +1385,6 @@
     86.633255
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json"
   ]
 }

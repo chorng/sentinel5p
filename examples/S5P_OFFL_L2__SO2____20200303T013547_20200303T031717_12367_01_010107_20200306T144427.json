@@ -1361,10 +1361,13 @@
     }
   ],
   "assets": {
-    "S5P_OFFL_L2__SO2____20200303T013547_20200303T031717_12367_01_010107_20200306T144427": {
+    "Sulphur Dioxide SO2": {
       "href": "/opt/stactools-sentinel5p/tests/data-files/S5P_OFFL_L2__SO2____20200303T013547_20200303T031717_12367_01_010107_20200306T144427.nc",
       "type": "application/x-netcdf",
       "description": "TROPOMI/S5P Sulphur Dioxide SO2",
+      "file:checksum": "169ca4eb8b24ea72c4fb239b0c30e78a",
+      "file:size": 184238,
+      "file:local_path": "S5P_OFFL_L2__SO2____20200303T013547_20200303T031717_12367_01_010107_20200306T144427",
       "roles": [
         "data",
         "metadata"
@@ -1378,7 +1381,6 @@
     86.48782
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json"
   ]
 }

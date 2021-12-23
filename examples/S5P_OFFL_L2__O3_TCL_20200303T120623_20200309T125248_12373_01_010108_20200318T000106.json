@@ -252,10 +252,13 @@
     }
   ],
   "assets": {
-    "S5P_OFFL_L2__O3_TCL_20200303T120623_20200309T125248_12373_01_010108_20200318T000106": {
+    "Ozone Tropospheric Column": {
       "href": "/opt/stactools-sentinel5p/tests/data-files/S5P_OFFL_L2__O3_TCL_20200303T120623_20200309T125248_12373_01_010108_20200318T000106.nc",
       "type": "application/x-netcdf",
       "description": "TROPOMI/S5P Ozone Tropospheric Column",
+      "file:checksum": "0b673083ab8df97cd2e36e6d9aabb5ed",
+      "file:size": 46554,
+      "file:local_path": "S5P_OFFL_L2__O3_TCL_20200303T120623_20200309T125248_12373_01_010108_20200318T000106",
       "roles": [
         "data",
         "metadata"
@@ -269,7 +272,6 @@
     19.75
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json"
   ]
 }

@@ -1361,10 +1361,13 @@
     }
   ],
   "assets": {
-    "S5P_OFFL_L2__O3_____20200303T013547_20200303T031717_12367_01_010107_20200306T053811": {
+    "Ozone Total Column": {
       "href": "/opt/stactools-sentinel5p/tests/data-files/S5P_OFFL_L2__O3_____20200303T013547_20200303T031717_12367_01_010107_20200306T053811.nc",
       "type": "application/x-netcdf",
       "description": "TROPOMI/S5P Ozone Total Column",
+      "file:checksum": "701219dab6f44f0bbf7af941129c4246",
+      "file:size": 161639,
+      "file:local_path": "S5P_OFFL_L2__O3_____20200303T013547_20200303T031717_12367_01_010107_20200306T053811",
       "roles": [
         "data",
         "metadata"
@@ -1378,7 +1381,6 @@
     86.48782
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json"
   ]
 }
