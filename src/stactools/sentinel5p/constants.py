@@ -110,3 +110,19 @@ SENTINEL_TROPOMI_BANDS = {
         "spectral magnification": 0.021
     }
 }
+
+ASSET_KEYS = {
+    "AER_AI_": "Aerosol Index",
+    "AER_LH_": "Aerosol Layer Height",
+    "NP_BD3_": "Band 3 VIIRS/NPP Cloud",
+    "NP_BD6_": "Band 6 VIIRS/NPP Cloud",
+    "NP_BD7_": "Band 7 VIIRS/NPP Cloud",
+    "CH4____": "Methane",
+    "CLOUD__": "Cloud",
+    "CO_____": "CO Column",
+    "HCHO___": "Tropospheric Formaldehyde HCHO",
+    "NO2____": "NO2",
+    "O3_____": "Ozone Total Column",
+    "O3_TCL_": "Ozone Tropospheric Column",
+    "SO2____": "Sulphur Dioxide SO2"
+}
