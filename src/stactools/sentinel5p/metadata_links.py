@@ -1,9 +1,11 @@
 import json
+import os
+from hashlib import md5  # type: ignore
 
 import netCDF4 as nc  # type: ignore
 import pystac
 
-from .constants import SAFE_MANIFEST_ASSET_KEY
+from .constants import ASSET_KEYS, SAFE_MANIFEST_ASSET_KEY
 
 
 class ManifestError(Exception):
@@ -39,16 +41,29 @@ class MetadataLinks:
 
     def create_band_asset(self):
         asset_id = self.file_path.split("/")[-1].split(".")[0]
+        product_type = asset_id[13:20]
+        asset_key = ASSET_KEYS[product_type]
         media_type = "application/x-netcdf"
         roles = ["data", "metadata"]
         if self.file_path.endswith(".nc"):
             data_href = self.file_path
             description = self._root.title
+            asset_size = os.path.getsize(self.file_path)
+            with open(self.file_path, 'rb') as f:
+                asset_checksum = md5(f.read()).hexdigest()
+
         else:
             data_href = self.file_path.replace(".json", ".nc")
             description = self._root["title"]
+            asset_checksum = self._root["checksum"]
+            asset_size = self._root["size"]
         asset = pystac.Asset(href=data_href,
                              media_type=media_type,
                              description=description,
-                             roles=roles)
-        return asset_id, asset
+                             roles=roles,
+                             extra_fields={
+                                 "file:checksum": asset_checksum,
+                                 "file:size": asset_size,
+                                 "file:local_path": asset_id
+                             })
+        return asset_key, asset

@@ -1362,10 +1362,13 @@
     }
   ],
   "assets": {
-    "S5P_OFFL_L2__AER_AI_20200303T013547_20200303T031717_12367_01_010302_20200306T032414": {
+    "Aerosol Index": {
       "href": "/opt/stactools-sentinel5p/tests/data-files/S5P_OFFL_L2__AER_AI_20200303T013547_20200303T031717_12367_01_010302_20200306T032414.nc",
       "type": "application/x-netcdf",
       "description": "TROPOMI/S5P Aerosol Index 1-Orbit L2 Swath 7x3.5km",
+      "file:checksum": "39a18afb1abc1895bb895d29345146d2",
+      "file:size": 201506,
+      "file:local_path": "S5P_OFFL_L2__AER_AI_20200303T013547_20200303T031717_12367_01_010302_20200306T032414",
       "roles": [
         "data",
         "metadata"

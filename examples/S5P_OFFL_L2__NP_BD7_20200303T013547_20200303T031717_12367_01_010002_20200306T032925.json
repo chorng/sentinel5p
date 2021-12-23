@@ -1366,22 +1366,13 @@
     }
   ],
   "assets": {
-    "S5P_OFFL_L2__NP_BD7_20200303T013547_20200303T031717_12367_01_010002_20200306T032925": {
+    "Band 7 VIIRS/NPP Cloud": {
       "href": "/opt/stactools-sentinel5p/tests/data-files/S5P_OFFL_L2__NP_BD7_20200303T013547_20200303T031717_12367_01_010002_20200306T032925.nc",
       "type": "application/x-netcdf",
       "description": "TROPOMI/S5P VIIRS/NPP Cloud product",
-      "eo:bands": [
-        {
-          "name": "Band 7",
-          "spectrometer": "SWIR",
-          "performance range": "2305-2385",
-          "spectral range": "2300-2343",
-          "spectral resoluton": 0.227,
-          "slit width": 308,
-          "spectral dispersion": 0.094,
-          "spectral magnification": 0.025
-        }
-      ],
+      "file:checksum": "f8f672e675582fb12e140c0175547a68",
+      "file:size": 234034,
+      "file:local_path": "S5P_OFFL_L2__NP_BD7_20200303T013547_20200303T031717_12367_01_010002_20200306T032925",
       "roles": [
         "data",
         "metadata"
@@ -1395,7 +1386,6 @@
     86.633255
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json"
   ]
 }
