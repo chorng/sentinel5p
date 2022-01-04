@@ -1379,7 +1379,7 @@
       "description": "TROPOMI/S5P Methane 1-Orbit L2 Swath 7x7km",
       "file:checksum": "845e0b705a09521f49dd4a8788dba97f",
       "file:size": 235266,
-      "file:local_path": "S5P_OFFL_L2__CH4____20200303T013547_20200303T031717_12367_01_010302_20200306T053811",
+      "file:local_path": "S5P_OFFL_L2__CH4____20200303T013547_20200303T031717_12367_01_010302_20200306T053811/S5P_OFFL_L2__CH4____20200303T013547_20200303T031717_12367_01_010302_20200306T053811.nc",
       "roles": [
         "data",
         "metadata"
@@ -1393,6 +1393,7 @@
     86.633255
   ],
   "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
     "https://stac-extensions.github.io/sat/v1.0.0/schema.json"
   ]
 }

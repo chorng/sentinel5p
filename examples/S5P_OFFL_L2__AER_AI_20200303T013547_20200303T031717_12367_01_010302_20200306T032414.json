@@ -1368,7 +1368,7 @@
       "description": "TROPOMI/S5P Aerosol Index 1-Orbit L2 Swath 7x3.5km",
       "file:checksum": "39a18afb1abc1895bb895d29345146d2",
       "file:size": 201506,
-      "file:local_path": "S5P_OFFL_L2__AER_AI_20200303T013547_20200303T031717_12367_01_010302_20200306T032414",
+      "file:local_path": "S5P_OFFL_L2__AER_AI_20200303T013547_20200303T031717_12367_01_010302_20200306T032414/S5P_OFFL_L2__AER_AI_20200303T013547_20200303T031717_12367_01_010302_20200306T032414.nc",
       "roles": [
         "data",
         "metadata"
@@ -1382,6 +1382,7 @@
     86.48782
   ],
   "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
     "https://stac-extensions.github.io/sat/v1.0.0/schema.json"
   ]
 }
