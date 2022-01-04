@@ -32,7 +32,9 @@ def create_item(file_path: str) -> pystac.Item:
         bbox=product_metadata.get_bbox,
         datetime=product_metadata.get_datetime,
         properties={},
-        stac_extensions=[],
+        stac_extensions=[
+            "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+        ],
     )
 
     # ---- Add Extensions ----

@@ -64,6 +64,6 @@ class MetadataLinks:
                              extra_fields={
                                  "file:checksum": asset_checksum,
                                  "file:size": asset_size,
-                                 "file:local_path": asset_id
+                                 "file:local_path": f"{asset_id}/{asset_id}.nc"
                              })
         return asset_key, asset
