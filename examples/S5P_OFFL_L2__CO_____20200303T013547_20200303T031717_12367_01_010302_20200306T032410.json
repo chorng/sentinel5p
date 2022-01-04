@@ -1371,7 +1371,7 @@
       "description": "TROPOMI/S5P CO Column 1-Orbit L2 Swath 7x7km",
       "file:checksum": "684b3a0a76934f16712e7898211d8b79",
       "file:size": 202055,
-      "file:local_path": "S5P_OFFL_L2__CO_____20200303T013547_20200303T031717_12367_01_010302_20200306T032410",
+      "file:local_path": "S5P_OFFL_L2__CO_____20200303T013547_20200303T031717_12367_01_010302_20200306T032410/S5P_OFFL_L2__CO_____20200303T013547_20200303T031717_12367_01_010302_20200306T032410.nc",
       "roles": [
         "data",
         "metadata"
@@ -1385,6 +1385,7 @@
     86.633255
   ],
   "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
     "https://stac-extensions.github.io/sat/v1.0.0/schema.json"
   ]
 }

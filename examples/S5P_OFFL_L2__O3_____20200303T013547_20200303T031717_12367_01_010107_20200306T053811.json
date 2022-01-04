@@ -1367,7 +1367,7 @@
       "description": "TROPOMI/S5P Ozone Total Column",
       "file:checksum": "701219dab6f44f0bbf7af941129c4246",
       "file:size": 161639,
-      "file:local_path": "S5P_OFFL_L2__O3_____20200303T013547_20200303T031717_12367_01_010107_20200306T053811",
+      "file:local_path": "S5P_OFFL_L2__O3_____20200303T013547_20200303T031717_12367_01_010107_20200306T053811/S5P_OFFL_L2__O3_____20200303T013547_20200303T031717_12367_01_010107_20200306T053811.nc",
       "roles": [
         "data",
         "metadata"
@@ -1381,6 +1381,7 @@
     86.48782
   ],
   "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
     "https://stac-extensions.github.io/sat/v1.0.0/schema.json"
   ]
 }

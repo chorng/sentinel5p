@@ -1367,7 +1367,7 @@
       "description": "TROPOMI/S5P Cloud",
       "file:checksum": "f1903a06f4fe358aa3a757c65f1aceab",
       "file:size": 169326,
-      "file:local_path": "S5P_OFFL_L2__CLOUD__20200303T013547_20200303T031717_12367_01_010107_20200306T032410",
+      "file:local_path": "S5P_OFFL_L2__CLOUD__20200303T013547_20200303T031717_12367_01_010107_20200306T032410/S5P_OFFL_L2__CLOUD__20200303T013547_20200303T031717_12367_01_010107_20200306T032410.nc",
       "roles": [
         "data",
         "metadata"
@@ -1381,6 +1381,7 @@
     86.48782
   ],
   "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
     "https://stac-extensions.github.io/sat/v1.0.0/schema.json"
   ]
 }
