@@ -12,6 +12,7 @@ class ProductMetadataError(Exception):
 
 
 class ProductMetadata:
+
     def __init__(self, file_path) -> None:
         self.file_path = file_path
         if file_path.endswith(".nc"):
@@ -145,6 +146,7 @@ class ProductMetadata:
 
     @property
     def metadata_dict(self) -> Dict[str, Any]:
+
         def _get_start_datetime(product_path, product_root):
             if "O3_TCL" in product_path:
                 stratosphere_start_datetime = product_root.time_coverage_start

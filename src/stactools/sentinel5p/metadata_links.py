@@ -13,6 +13,7 @@ class ManifestError(Exception):
 
 
 class MetadataLinks:
+
     def __init__(self, file_path: str):
         self.file_path = file_path
         if file_path.endswith(".nc"):
