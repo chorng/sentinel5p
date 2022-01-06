@@ -5,7 +5,7 @@ from hashlib import md5  # type: ignore
 import netCDF4 as nc  # type: ignore
 import pystac
 
-from .constants import ASSET_KEYS, SAFE_MANIFEST_ASSET_KEY
+from .constants import SAFE_MANIFEST_ASSET_KEY
 
 
 class ManifestError(Exception):
@@ -42,10 +42,9 @@ class MetadataLinks:
 
     def create_band_asset(self):
         asset_id = self.file_path.split("/")[-1].split(".")[0]
-        product_type = asset_id[13:20]
-        asset_key = ASSET_KEYS[product_type]
+        asset_key = "data"
         media_type = "application/x-netcdf"
-        roles = ["data", "metadata"]
+        roles = ["data"]
         if self.file_path.endswith(".nc"):
             data_href = self.file_path
             description = self._root.title
