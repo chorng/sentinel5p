@@ -26,24 +26,22 @@ def create_item(file_path: str) -> pystac.Item:
 
     product_metadata = ProductMetadata(file_path)
 
-    item = pystac.Item(
-        id=product_metadata.scene_id,
-        geometry=product_metadata.get_geometry,
-        bbox=product_metadata.get_bbox,
-        datetime=product_metadata.get_datetime,
-        properties={},
-        stac_extensions=[
-            "https://stac-extensions.github.io/file/v2.1.0/schema.json"
-        ],
-    )
+    stac_extensions = []
+    if file_path.endswith(".nc"):
+        stac_extensions.append(
+            "https://stac-extensions.github.io/file/v2.1.0/schema.json")
+
+    item = pystac.Item(id=product_metadata.scene_id,
+                       geometry=product_metadata.get_geometry,
+                       bbox=product_metadata.get_bbox,
+                       datetime=product_metadata.get_datetime,
+                       properties={},
+                       stac_extensions=stac_extensions)
 
     # ---- Add Extensions ----
     # sat
     sat = SatExtension.ext(item, add_if_missing=True)
     fill_sat_properties(sat, file_path)
-
-    # eo
-    # EOExtension.ext(item, add_if_missing=True)
 
     # s5p product properties
     item.properties.update({**product_metadata.metadata_dict})

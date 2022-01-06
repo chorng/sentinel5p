@@ -52,19 +52,20 @@ class MetadataLinks:
             asset_size = os.path.getsize(self.file_path)
             with open(self.file_path, 'rb') as f:
                 asset_checksum = md5(f.read()).hexdigest()
+            extra_fields = {
+                "file:checksum": asset_checksum,
+                "file:size": asset_size,
+                "file:local_path": f"{asset_id}/{asset_id}.nc"
+            }
 
         else:
             data_href = self.file_path.replace(".json", ".nc")
             description = self._root["title"]
-            asset_checksum = self._root["checksum"]
-            asset_size = self._root["size"]
+            extra_fields = {}
+
         asset = pystac.Asset(href=data_href,
                              media_type=media_type,
                              description=description,
                              roles=roles,
-                             extra_fields={
-                                 "file:checksum": asset_checksum,
-                                 "file:size": asset_size,
-                                 "file:local_path": f"{asset_id}/{asset_id}.nc"
-                             })
+                             extra_fields=extra_fields)
         return asset_key, asset
